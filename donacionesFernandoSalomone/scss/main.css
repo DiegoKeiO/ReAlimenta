@@ -1,0 +1,116 @@
+/* Reseteo global */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* -------------- HEADER ----------------- */
+.header {
+  background-color: #263a4b;
+}
+.header__navLogo {
+  width: 5rem;
+  transform: rotate(360deg);
+  transition: transform 5s;
+}
+.header__navLogo:hover {
+  transform: rotate(1deg);
+}
+.header__item {
+  margin: 0 1rem;
+}
+.header__link {
+  color: white;
+  font-size: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  transition: color 2s;
+  transition: font-size 1s;
+}
+.header__link:hover {
+  color: #9BA5B1;
+  font-size: 23px;
+}
+
+/* -------------- HERO ----------------- */
+.sectionHero__imageContainer {
+  width: 100%;
+}
+.sectionHero__imageContainer .sectionHero__image {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/* Configuracion de Imagen articulos INDEX */
+.section__articleImg {
+  height: 100%;
+  width: 100%;
+}
+
+/* Corrigiendo tamano de imagenes en Carousel en CENTROS DE DONACION */
+.carousel-inner img {
+  max-height: 700px;
+}
+
+.carousel-caption--background {
+  background-color: rgba(237, 222, 222, 0.5);
+  border: 0.1rem solid rgba(0, 0, 0, 0.5);
+}
+
+/* -------------- FOOTER ----------------- */
+/*Para utilizacion de extend*/
+.fuente, .footer__item, .footer__titleH4 {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+
+.footer {
+  padding: 3rem 0;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgba(2, 0, 36, 0.7682423311) 0%, rgb(9, 9, 121) 29%, rgb(5, 100, 181) 59%, rgb(43, 81, 97) 81%, rgb(0, 212, 255) 100%);
+}
+.footer__nav {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  justify-items: center;
+  align-items: flex-start;
+}
+@media screen and (max-width: 449px) {
+  .footer__nav {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+  }
+}
+.footer__list {
+  list-style-type: none;
+}
+@media screen and (max-width: 449px) {
+  .footer__list {
+    padding: 1rem 0;
+  }
+}
+.footer__titleH4 {
+  color: white;
+  padding: 0.5rem 0;
+}
+.footer__item {
+  padding: 0 0.5rem;
+  text-decoration: none;
+  line-height: 1.5rem;
+  font-size: 0.8rem;
+  color: #869FB2;
+}
+.footer__item:hover {
+  color: white;
+}
+.footer__comunidad {
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer__logoRedSocial {
+  width: 2.5rem;
+}
+.footer__logoRedSocial:hover {
+  box-shadow: 0 0 0.1rem 0 #9BA5B1;
+}/*# sourceMappingURL=main.css.map */

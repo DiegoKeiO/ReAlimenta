@@ -1,0 +1,61 @@
+@import "../parciales/media";
+@import "../parciales/mapas";
+
+/*Para utilizacion de extend*/
+.fuente {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+
+.footer {
+    padding: 3rem 0;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,0.7682423311121324) 0%, rgba(9,9,121,1) 29%, rgba(5,100,181,1) 59%, rgba(43,81,97,1) 81%, rgba(0,212,255,1) 100%);
+    &__nav {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        justify-items: center;
+        align-items: flex-start;
+        @include tamanioTelefono {
+            grid-template-columns: 1fr;
+            grid-template-rows: auto auto;
+        }
+    }
+    &__list  {
+        list-style-type: none;
+        @include tamanioTelefono {
+            padding: 1rem 0; 
+        }
+    }
+    &__titleH4 {
+        @extend .fuente;        
+        color: map-get($colores, colorBlanco);
+        padding: 0.5rem 0;
+    }
+    &__item {
+        padding: 0 0.5rem;
+        text-decoration: none;
+        line-height: 1.5rem;
+        @extend .fuente;
+        font-size: 0.8rem;
+        color: map-get($colores, colorCeleste);
+    }
+    &__item:hover{
+        color: map-get($colores, colorBlanco);
+    }                
+
+
+    &__comunidad {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__logoRedSocial {
+        width: 2.5rem;
+    }
+    &__logoRedSocial:hover {
+        box-shadow: 0 0 0.1rem 0 map-get($colores, colorGrisTopo);
+    }
+}
+

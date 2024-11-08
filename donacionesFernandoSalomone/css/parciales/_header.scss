@@ -1,0 +1,40 @@
+@import "../parciales/mapas";
+
+.header{
+    background-color:map-get($colores, colorGrisEspecial);
+
+    &__navLogo {
+        width: 5rem;
+        transform: rotate(360deg);
+        transition: transform 5s;
+    }
+    
+    &__navLogo:hover {
+        transform: rotate(1deg);
+    }    
+    
+    &__item {
+        margin: 0 1rem;
+    }
+    
+    &__link {
+        color: map-get($colores, colorBlanco);
+        background-color: map-get($colores, colorGrisEspecial);
+        border-radius: 5px;
+        font-size: 23px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+        //transiciones
+        transition: color 1s;
+        //transition: border-radius 0.9s;
+        transition: background-color 0.9s;
+    }
+
+    
+    &__link:hover {
+        //cambio para transiciones
+        color:map-get($colores, colorNegro);
+        background-color: map-get($colores, colorGrisTopo);
+        //border-radius: 10px;
+    }
+}

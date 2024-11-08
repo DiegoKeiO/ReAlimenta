@@ -1,0 +1,118 @@
+/* Reseteo global */
+* {
+  padding: 0;
+  margin: 0; }
+
+/* -------------- HEADER ----------------- */
+.header {
+  background-color: #263a4b; }
+  .header__navLogo {
+    width: 5rem;
+    transform: rotate(360deg);
+    transition: transform 5s; }
+  .header__navLogo:hover {
+    transform: rotate(1deg); }
+  .header__item {
+    margin: 0 1rem; }
+  .header__link {
+    color: white;
+    background-color: #263a4b;
+    border-radius: 5px;
+    font-size: 23px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: color 1s;
+    transition: background-color 0.9s; }
+  .header__link:hover {
+    color: black;
+    background-color: #9BA5B1; }
+
+/* -------------- HERO ----------------- */
+.sectionHero__imageContainer {
+  width: 100%; }
+  .sectionHero__imageContainer .sectionHero__image {
+    width: 100%;
+    object-fit: cover; }
+
+/* Configuracion de articulos INDEX */
+.articleContainer {
+  width: auto;
+  height: auto;
+  background: white;
+  border-radius: 0.4em;
+  box-shadow: 0.3em 0.3em 0.7em #00000015;
+  transition: border 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border: #fafafa 0.2em solid; }
+
+.articleContainer:hover {
+  border: #006fff 0.2em solid; }
+
+.section__articleImg {
+  height: 190px;
+  width: 100%; }
+
+.article-parrafo {
+  height: 4rem;
+  overflow: auto; }
+
+.article-title {
+  height: 3rem; }
+
+/* Corrigiendo tamano de imagenes en Carousel en CENTROS DE DONACION */
+.carousel-inner img {
+  max-height: 700px; }
+
+.carousel-caption--background {
+  background-color: rgba(237, 222, 222, 0.5);
+  border: 0.1rem solid rgba(0, 0, 0, 0.5); }
+
+/* Login */
+.card {
+  width: auto;
+  height: auto;
+  border-radius: 30px;
+  background: #e0e0e0;
+  box-shadow: 5px 5px 12px #bebebe, -5px -5px 12px #ffffff; }
+
+/* -------------- FOOTER ----------------- */
+/*Para utilizacion de extend*/
+.fuente, .footer__titleH4, .footer__item {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold; }
+
+.footer {
+  padding: 3rem 0;
+  background: #020024;
+  background: linear-gradient(90deg, rgba(2, 0, 36, 0.768242) 0%, #090979 29%, #0564b5 59%, #2b5161 81%, #00d4ff 100%); }
+  .footer__nav {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    justify-items: center;
+    align-items: flex-start; }
+    @media screen and (max-width: 449px) {
+      .footer__nav {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto; } }
+  .footer__list {
+    list-style-type: none; }
+    @media screen and (max-width: 449px) {
+      .footer__list {
+        padding: 1rem 0; } }
+  .footer__titleH4 {
+    color: white;
+    padding: 0.5rem 0; }
+  .footer__item {
+    padding: 0 0.5rem;
+    text-decoration: none;
+    line-height: 1.5rem;
+    font-size: 0.8rem;
+    color: #869FB2; }
+  .footer__item:hover {
+    color: white; }
+  .footer__comunidad {
+    display: flex;
+    flex-wrap: wrap; }
+  .footer__logoRedSocial {
+    width: 2.5rem; }
+  .footer__logoRedSocial:hover {
+    box-shadow: 0 0 0.1rem 0 #9BA5B1; }
